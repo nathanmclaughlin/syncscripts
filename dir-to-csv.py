@@ -42,8 +42,8 @@ def main(argv):
     """Main entry point for the script."""
     try:                                
         opts, args = getopt.getopt(argv, "hg:d", ["help", "grammar="])
-    except getopt.GetoptError:           3
-        usage()                          4
+    except getopt.GetoptError:
+        usage()
         sys.exit(2)      
 
     accounts = get_account_info(type)
@@ -51,7 +51,6 @@ def main(argv):
         csvwriter = csv.writer(output)
         for id, cn, mail in accounts:
             csvwriter.writerow([id, cn, mail])
-
 
 if __name__ == '__main__':
     sys.exit(main(sys.argv[1:]))
