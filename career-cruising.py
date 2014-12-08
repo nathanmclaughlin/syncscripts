@@ -1,4 +1,4 @@
-"""An experiment with tablib"""
+"""Export student data for Career Cruising."""
 
 import tablib, ConfigParser, pyodbc
 
@@ -21,5 +21,5 @@ try:
 except pyodbc.Error, e:
 	print e
 
-with open('students.xls', 'w') as outfile:
-	outfile.write(data.xls)
+with open('students.xlsx', 'wb') as f:
+	f.write(data.xlsx)
