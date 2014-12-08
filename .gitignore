@@ -55,3 +55,7 @@ target/
 
 # Temporary - Local config.ini file
 config.ini
+
+# Output files from scripts
+*.csv
+*.xls
