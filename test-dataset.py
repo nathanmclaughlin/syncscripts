@@ -10,5 +10,9 @@ db = dataset.connect(config.get('StudentDB','dsn'))
 
 
 
-table = db['REG']
+# table = db['REG_BUILDING']
+
+print(db.tables)
+
+
 
